@@ -3,24 +3,6 @@ html, body {
   font-family: 'Noto Sans', sans-serif;
   color: #404040;
 }
-.content {
-  display: flex;
-  width: 100%;
-  justify-content: flex-start;
-  position: relative;
-  top: 4rem;
-  background-color: #dcdcdc;
-}
-
-.main {
-
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  height: auto;
-  width: 100%;
-
-}
 
 h1 {
   font-size: 3.5rem;
@@ -30,43 +12,50 @@ h1 {
 h2 {
   font-size: 2.5rem;
   font-weight: bold;
+  margin: 2rem 0;
 }
 h3 {
   font-size: 2rem;
   font-weight: bold;
 }
 p {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.25;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 4rem;
+  background-color: #dcdcdc;
 }
 
                     /*HEADER*/
 header {
   display: flex;
-  width: 1750px;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   background-color: white;
   height: 4rem;
   position: fixed;
   z-index: 10;
-
+  border-bottom: 1px solid gray;
 }
 header .leftside {
   font-size: 1.25rem;
   display: flex;
   align-items: center;
+  margin-left: 1.5rem;
 }
-
 header nav ul {
   display: flex;
-
-
+  margin-right: 1.5rem;
 }
 nav li {
   padding-left: 1rem;
-  font-size: 1.25rem;
   color: #696969;
 }
 #acad {
@@ -74,103 +63,92 @@ nav li {
 }
 
   /*Start-Learning Section*/
-.main img {
+#main {
+  align-items: center;
+}
+.mainimage {
+  display: flex;
   width: 60%;
-  height: auto;
   padding: 2rem 1.5rem;
 }
-
-.main h3 {
-  margin-top: 1rem;
-  margin-bottom: 2rem;
+.mainimage img {
+  width: 100%;
+  height: 75%;
+}
+.main .start h3 {
+  margin-bottom: 3rem;
   line-height: normal;
 }
 .start {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
   width: 40%;
-  height: 100%;
+  height: auto;
 }
+
 .start span {
   text-align: center;
-  margin: 1rem 6rem;
-  padding: 0.5rem 3rem;
+  margin: 1rem 7rem;
+  padding: 0.5rem 4rem;
   font-size: 1.5rem;
   color: white;
   background-color: #404040;
   border-radius: 5px;
 }
 
-      /*Practicing Section*/
+    /*Practicing Section*/
+#practice {
+  align-items: flex-start;
+}
 .practicing {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   width: 60%;
   height: auto;
+  margin: 0;
   padding: 2rem 1.5rem;
   background-color: white;
   border-right: 1px solid #dcdcdc;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
-
 }
-.main .practicing img {
+.practicing img {
   width: 100%;
   height: auto;
-  padding: 0;
-}
-.practicing h2 {
-  padding-top: 2rem;
-  padding-bottom: 1.5rem;
 }
 .practicing p {
-  margin-bottom: 3rem;
-}
-.practicing span {
-  margin-top: 6px;
-}
-.practicing p {
+  margin-bottom: 2rem;
   padding: 0;
-  margin-top: 0.5rem;
-  margin-bottom: 1rem;
-  line-height: 1.25;
 }
 
 .aboutus {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   width: 40%;
   height: auto;
-  padding-top: 0.75rem;
-  padding-bottom: 1.75rem;
+  padding: 1rem 0 4rem 0;
   background-color: white;
 }
-.main .aboutus img {
-  width: 35%;
-  height: auto;
-  padding: 1rem;
-}
 
-.information {
+.aboutus .information {
   display: flex;
-  width: 100%;
-  height: auto;
-  border-bottom: 1px solid #dcdcdc;
+  border-bottom: 4px solid #dcdcdc;
 }
 .information:hover {
   background-color: #dcdcdc;
 }
 
 .aboutus .information img {
-  display: flex;
   width: 35%;
-  height: auto;
+  height: 35%;
+  margin: 1rem;
 }
-
+.information .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 0.5rem;
+}
 .information .info p {
   padding: 0;
   margin-top: 0.5rem;
@@ -179,99 +157,101 @@ nav li {
 }
 .information .info a {
   color: #1e90ff;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
 }
 
-    /*Courses Grill*/
-.middle {
-  display: flex;
-  flex-flow: column;
-  padding: 2rem 4.5rem;
-}
-.middle h2 {
-  width: 100%;
-  height: auto;
-  text-align: center;
+/*Courses Grill*/
+#grill {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .courses {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-
+  justify-content: center;
+  width: 100%;
+  height: 50%;
 }
 .course {
   display: flex;
   flex-flow: column;
-  width: 32%;
-  height: 100%;
+  width: 25%;
+  height: 365px;
+  margin: 0 1rem 2rem 1rem;
   background-color: white;
 }
+.course img {
+  width: 100%;
+  height: auto;
+}
 .course h3, p {
-  padding: 0.75rem 1rem;
+  padding: 0.5rem 1rem;
   line-height: 1.25;
 }
 
-  /*Thesis Exhibit Section*/
+/*Thesis Exhibit Section*/
 .thesis {
-  display: flex;
-  flex-flow: column;
-  width: 100%;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  background-color: white;
-}
-.thesis h2 {
-  text-align: center;
-  padding-bottom: 2rem;
+display: flex;
+flex-flow: column;
+align-items: center;
+width: 100%;
+height: auto;
+background-color: white;
 }
 .exhibit {
   display: flex;
+  padding-left: 1.5rem;
+  padding-right: 0.5rem;
 }
 .reimagine {
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   width: 60%;
   height: auto;
-  padding: 0 1.5rem;
 }
-.reimgine video{
-    max-width: 100%;
-    height: auto;
+.reimagine video {
+  width: 100%;
+  height: auto;
+}
+.reimagine p {
+  margin-bottom: 2rem;
+  padding: 0;
 }
 .reimagine h3 {
   margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 .proto {
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   width: 40%;
   height: auto;
 }
-
-.proto .prototype img {
-  width: 35%;
-  height: auto;
-  padding: 1rem;
-}
 .prototype {
   display: flex;
-  border-bottom: 1px solid #dcdcdc;
+  padding: 1rem;
 }
 .prototype:hover {
   background-color: #dcdcdc;
 }
-
+.prototype img {
+  width: 35%;
+  height: 35%;
+}
 .prototype .info {
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   justify-content: center;
-}
-.prototype .info h3 {
   padding-left: 1rem;
 }
+.prototype .info p {
+  padding: 0;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.25;
+}
 
+/*Footer*/
 footer {
   display: flex;
   justify-content: space-between;
